@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+int p, k, m =0;
+int rev, revp;
+int max = 0;
+for(m=100; m<=999; m++){
+    for(k=100; k<=999; k++){
+        p = k*m;
+        revp = p;
+        rev = 0;
+        while(revp != 0){
+            rev = rev*10 + revp%10;
+            revp /= 10;
+        }
+        if(rev == p){
+            if(p > max){
+                max = p;
+            }
+        }
+    }
+}
+printf("%d\n", max);
+return 0;
+}
+
