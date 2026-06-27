@@ -1,0 +1,29 @@
+problema 6
+A soma dos quadrados dos primeiros dez números naturais é:
+1² + 2² + ... + 10² = 385
+O quadrado da soma dos primeiros dez números naturais é:
+(1 + 2 + ... + 10)² = 55² = 3025
+Portanto, a diferença entre o quadrado da soma e a soma dos quadrados dos primeiros dez números naturais é:
+3025 − 385 = 2640
+Encontre a diferença entre a soma dos quadrados dos primeiros cem números naturais e o quadrado da soma.
+
+resposta: 25164150
+int main(){
+   // int a, b, c, soma = 0;
+    int a, b = 0;
+    long long c, d = 0;
+     for(a=1; a <= 100; a++){
+        b = b + a * a;
+        //printf("%d\n", b);
+
+     
+     }
+     for(c=1; c <= 100; c++){
+        d = d + c;
+        //d = d * d;
+        //printf("%d\n", d);
+     }
+     d = d * d;
+     printf("%lld\n", d - b);
+     return 0;
+    }
